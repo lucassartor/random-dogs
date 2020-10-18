@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🐶</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center" style="background: #edf2f7;">
+    <div class="text-center content-center justify-items-center">
+
+        <h1 class="text-3xl font-bold  mt-16">🐶 Fotos aleatórias de doguinhos 😀</h1>
+        <div class="mt-3 font-light mb-5">
+
+            <label class="uppercase" for="raca">Escolha uma Raça:</label>
+            <p class="text-2xl text-gray-900 font-semibold pt-2 text-center">
+                <select class="text-center" name="raca" id="raca">
+                    <option value="aleatorio">Aleatório</option>
+                    <option value="beagle">Beagle</option>
+                    <option value="chow">Chow</option>
+                    <option value="husky">Husky</option>
+                    <option value="shihtzu">Shihtzu</option>
+                    <option value="golden">Golden Retriever</option>
+                </select>
+            </p>
+        </div>
+
+        <span class="sm:ml-3 shadow-sm rounded-md">
+              <button type="button" onclick="trocaImg()"
+                      class="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700 transition duration-150 ease-in-out">
+                Trocar de Dog
+              </button>
+        </span>
+
+        <div class="float-none mt-5 ml-0 mr-0 justify-center" style="display: flex !important;">
+            <img id="dog" src="" alt="">
+        </div>
+
+        <div class="mt-5">
+            <a class="text-indigo-600 hover:underline font-bold" href="https://procaes.org.br">Adote um doguinho! </a>
+        </div>
+        <div class="mt-3">
+            Imagens coletadas pela <a class="text-indigo-600 hover:underline" href="https://dog.ceo/dog-api/">Dog API</a>
+        </div>
+        <div class="mt-3">
+            Feito com ❤ por <a class="text-indigo-600 hover:underline" href="https://github.com/lucassartor">Lucas Sartor</a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
